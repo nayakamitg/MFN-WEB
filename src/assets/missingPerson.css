@@ -1,0 +1,258 @@
+.MissingPersonContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(255, 255, 255);
+    min-height: 100vh;
+}
+
+.MissingPersonContainer h1{
+    color: #34495e;
+    font-size: 4vw;
+    font-weight: 500;
+
+}
+.missingPersonFilter{
+    width: 100%;
+    margin-top: 100px;
+}
+
+.searchContainer{
+margin: 25px 0px !important;
+}
+
+.missingPersonCards{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    min-height:200px ;
+    justify-content: center;
+    gap: 5px;
+}
+.missingPersonCards div{
+    flex: 10 1 200px;
+}
+.card1{
+    max-height: 350px;
+    max-width: 250px;
+}
+.card1 img{
+    background: url("https://imgs.search.brave.com/QrrF8yctvnxGKn5UBvuEt1XL7Pv04zXmzQ0y50RN5cY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90NC5m/dGNkbi5uZXQvanBn/LzA3LzkxLzIyLzU5/LzM2MF9GXzc5MTIy/NTkyN19jYVJQUEg5/OUQ2RDFpRm9ua0NS/bUNHemtKUGYzNlFE/dy5qcGc");
+    background-position: center;
+    background-size: cover;
+}
+
+.prev,.next{
+    background-color: #256a20c3;
+    height: 50px;
+    width: 50px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 13px;
+}
+.prev:disabled,.next:disabled{
+    background-color: grey;
+    cursor: not-allowed;
+}
+
+.Pagination{
+    margin: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+.Pagination span{
+    color: #7c7c7c;
+}
+.FilterButton{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 40px;
+}
+
+.genderFilter,.cityStateFilter{
+    border: 1px solid ;
+    border-radius: 4px;
+    text-align: center;
+    padding: 4px 8px 4px 8px;
+    cursor: pointer;
+    background-color: transparent;
+    width: 100px !important;
+    flex: 0;
+     appearance: none;    
+  -webkit-appearance: none;   
+  -moz-appearance: none;
+}
+.cityStateFilter option{
+ width: 200px;
+}
+.stdropdown-tools{
+    display: none;
+}
+.stsearch-box{
+    background-color: transparent;
+    width: 100px;
+}
+.searchContainer input{
+    background-color: transparent;
+    border-radius: 50px !important;
+}
+searchContainer select{
+    width: 400px ;
+}
+
+.SearchFilter .stdropdown-input,.offcanvas-body .stsearch-box{
+border: 1px solid;
+border-radius: 50px; 
+ }
+.stdropdown-menu{
+    width: 200px !important;
+}
+.stdropdown-input input:focus{
+border: none;
+}
+.FilterOne{
+    display: flex;
+    column-gap: 10px;
+    row-gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+}
+.offcanvas-body .NameFilter{
+width: 100%;
+border-radius:10px ;
+padding: 0 10px 0 10px;
+margin-bottom: 15px;
+}
+.offcanvas-body{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.offcanvas{
+    width: 700px;
+}
+.FilterTitle{
+    border: 1px solid;
+    padding: 5px 20px 5px 10px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.FilterOne {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 25px;
+    width: 100%;
+    align-items: center;
+}
+
+.NameSearch{
+    height: 40px !important;
+    width: 100%;
+    border-radius:4px ;
+    border: 1px solid ;
+    padding:0 10px;
+
+}
+.filterButton{
+    width: 90%;
+    border-radius:10px;
+}
+.OffcanvasButtom{
+    display: flex;
+    gap: 10px;
+    margin: 0 10px;
+}
+.reset{
+    background-color: #ff3636;
+}
+.reset:hover{
+    background-color: red;
+}
+.State{
+    display: flex;
+    gap: 10px;
+}
+.State input, .State select{
+    border-radius: none !important;
+}
+
+
+.offcanvas .stdropdown-container{
+    height: 30px;
+}
+
+.offcanvas-body .stsearch-box{
+    height: 36px;
+}
+.offcanvas-body input{
+    height: 100%;
+}
+.selected {
+    background-color: #2563eb !important;
+    border: none !important;
+    color: white !important;
+}
+.TopButton{
+    right: 130px;
+    width: 45px;
+    padding: 0;
+}
+
+.offcanvas, .offcanvas-end, .show{
+    width: 500px !important;
+}
+.offcanvas-backdrop{
+    width: 100vw !important;
+}
+
+
+@media (max-width:685px) {
+    .missingPersonCards{
+width: 100%;
+}
+.genderFilter, .cityStateFilter {
+    width: 80px !important;
+    padding:1px !important;
+    font-size: 15px;
+    flex: 1;
+}
+.cityStateFilter {
+    /* padding:10px !important; */
+}
+.SearchFilter{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    gap: 2px;
+}
+
+}
+@media (min-width:685px) and (max-width:761px) {
+.missingPersonFilter{
+    margin-top: 160px;
+    width: 100%;
+}
+}
+@media (min-width:685px) and (max-width:990px) {
+    .searchContainer{
+
+}
+
+}

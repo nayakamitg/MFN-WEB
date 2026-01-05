@@ -1,0 +1,203 @@
+
+.body{
+background-color: rgb(255, 255, 255);
+display: flex !important;
+flex-direction: column !important;
+width: 100% !important;
+align-items:center !important;
+min-height: 100vh;
+
+}
+
+.mainHomeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin-top: 60px;
+}
+.Hometitle{
+       color: #34495e;
+    font-size: 4vw;
+    font-weight: 500;
+}
+
+.SearchFilter{
+    width: 90%;
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    flex-wrap: wrap;
+}
+
+.searchContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    justify-content: center;
+}
+
+.searchContainer input,select{
+    padding: 0.5rem;
+    border-radius: 2px;
+    font-size: 16px;
+    color: black;
+    flex: 1 1 200px;
+}
+
+
+.title{
+    text-align: center;
+    font-size: 40px !important;
+}
+
+.box{
+    width: 100px;
+    height: 120px;
+    border-radius: 10px;
+}
+
+.Carosel{
+    width: 80%;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.CaroselContainer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.card{
+    max-width: 300px !important;
+    height: 250px;
+    border-radius: 10px;
+    user-select: none;
+    flex: 1 1 300px;
+}
+.card img{
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 50%;
+}
+.Location{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0.5rem 2px 0.5rem;
+    font-size: 14px;
+    color: #000000c7;
+    font-weight: normal;
+
+}
+.Slider{
+    width: 90%;
+    display: flex;
+    height: 250px;
+    box-shadow: inset 25px 0px 25px -25px rgba(4, 4, 4, 0.673), inset -25px 0px 25px -25px rgba(0, 0, 0, 0.689);
+   
+    
+}
+.Slider div{
+    margin: 0 0.1rem;
+}
+
+.slick-prev:before, .slick-next:before{
+    color: black !important;
+    background-color: "red";
+}
+
+
+.card-button {
+ transform: translate(-50%, 125%);
+ width: 60%;
+ border-radius: 1rem;
+ border: none;
+ background-color: var(--primary-light);
+ color: #fff;
+ font-size: 1rem;
+ padding: .5rem 1rem;
+ position: absolute;
+ left: 50%;
+ bottom: 0;
+ opacity: 0;
+ visibility: hidden;
+ transition: 0.3s ease-out;
+}
+
+.card:hover {
+ border-color: #256a20c3;
+ box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+ transform: translate(-50%, 50%);
+ 
+ visibility: visible;
+ opacity: 1;
+}
+
+.CaroselTitle{
+    font-size: 30px;
+
+}
+.space{
+    height: 50px;
+}
+.slick-list{
+    height: 300px;
+}
+
+.CaroselTitleContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem 2rem 2rem;
+    margin-top: 40px;
+
+}
+
+button{
+    background-color:#1473aa;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 4px !important;
+    padding: 0.5rem 1rem;
+    transition: all 0.3s ease;
+}
+button:hover{
+    background-color: #0D4A6D;
+}
+.FaLocationPin{
+    color: rgb(0, 0, 0);
+    transform: scale(1);
+}
+.CaroselContainer div{
+    flex: 10 1 200px;
+}
+
+
+@media (max-width:1127px) {
+    .CaroselTitleContainer{
+        margin-top: 90px;
+    }
+}
+
+
+@media (max-width:685px) {
+
+.SearchFilter{
+    width: 100%;
+}
+.CaroselTitleContainer{
+    padding: 0;
+    margin-top: 10px;
+}
+.mainHomeContainer{
+    width: 95%;
+     margin-top: 90px;
+}
+}

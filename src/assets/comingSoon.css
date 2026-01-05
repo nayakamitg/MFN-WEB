@@ -1,0 +1,135 @@
+.coming-soon-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: white;
+  text-align: center;
+  padding: 20px;
+ 
+}
+
+.coming-soon-content {
+  max-width: 800px;
+  margin: 0 auto;
+   margin-top: 160px;
+}
+
+.coming-soon-content h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.coming-soon-content p {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.timer-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  min-width: 120px;
+}
+
+.timer-item span {
+  font-size: 3rem;
+  font-weight: 700;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.timer-item p {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.newsletter {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  margin-top: 2rem;
+}
+
+.newsletter h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.email-input {
+  display: flex;
+  gap: 1rem;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.email-input input {
+  flex: 1;
+  padding: 1rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.email-input button {
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.email-input button:hover {
+  background-color: #1d4ed8;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .timer {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .timer-item {
+    min-width: 100px;
+    padding: 1rem;
+  }
+
+  .timer-item span {
+    font-size: 2rem;
+  }
+
+  .email-input {
+    flex-direction: column;
+  }
+
+  .email-input button {
+    width: 100%;
+  }
+
+  .coming-soon-content h1 {
+    font-size: 3rem;
+  }
+
+  .coming-soon-content p {
+    font-size: 1.2rem;
+  }
+}

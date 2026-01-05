@@ -1,0 +1,76 @@
+input,select,textarea,.passwordContainer{
+    height: 45px;
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid black;
+    padding: 0 10px;
+}
+label{
+    padding-top: 10px;
+    font-size: 20px;
+}
+input[type="file"]{
+    opacity: 0;
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.uploadBtn{
+    position: relative;
+    width: 90%;
+}
+
+.image{
+    height: 100px;
+    width: 100px;
+    overflow: hidden;
+    object-fit: cover;
+    position: relative;
+    border-radius: 5px;
+
+}
+.images{
+    width: 100%;
+    display: flex;
+    gap: 5px;
+    overflow-y: auto;
+    border: none;
+    flex-wrap: wrap;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+}
+.X{
+position: absolute;
+top: 5px;
+right: 5px;
+background-color: red;
+border-radius: 50%;
+z-index: 5;
+cursor: pointer;
+
+}
+h4{
+    font-size: 25px !important;
+    padding-top: 10px;
+}
+
+textarea{
+    height: 70px;
+}
+
+.error-input {
+  border: 2px solid red !important;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+  margin-top: 2px;
+}

@@ -1,0 +1,56 @@
+.mainDetailContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.detailsContainer{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.imageContainer{
+    width: 100%;
+    height: 650px;
+     flex: 1 400px;
+     display: flex;
+     flex-direction: column;
+}
+.descriptionContainer{
+    border: 1px solid rgb(0, 0, 0);
+    flex: 1 400px;
+       padding: 10px 10px 5px 10px;
+}
+.bigImage{
+    height: 550px;
+    object-fit: contain;
+    flex: 1 1;
+    border :1px solid #34495E;
+}
+.images{
+    height: 100px;
+    width: 100%;
+    border: 1px solid rgb(82, 82, 82) !important;
+    display: flex;
+    gap: 3px;
+}
+
+.smallImage{
+    height: 100%;
+    width: 100px;
+}
+.nameTitle{
+    padding-left: 10%;
+    color: #34495E;
+}
+table, th, td {
+  border: 1px solid rgb(98, 98, 98);
+  border-collapse: collapse;
+}
+.smallImage img{
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
