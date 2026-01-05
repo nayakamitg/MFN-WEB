@@ -29,11 +29,8 @@ const debounce = (fn, delay) => {
   };
 };
 
-
-
-
 const NavbarComp = () => {
-   const menuRef = useRef(null);
+  const menuRef = useRef(null);
   const [show, setShow] = useState(false);
   const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
@@ -66,12 +63,12 @@ const NavbarComp = () => {
   };
 
   console.log(name);
-  const [showOption,setShowOption]=useState(false)
+  const [showOption, setShowOption] = useState(false);
   const handleShowOptions = () => {
-    setShowOption((pre)=>!pre)
+    setShowOption((pre) => !pre);
   };
 
-    useEffect(() => {
+  useEffect(() => {
     const handleClickOutside = (event) => {
       if (menuRef.current && !menuRef.current.contains(event.target)) {
         setShowOption(false);
@@ -83,13 +80,13 @@ const NavbarComp = () => {
     };
   }, []);
 
-useEffect(()=>{
-  if(error){
-    toast.error("Failed to getting State")
-  }
-},[error])
+  useEffect(() => {
+    if (error) {
+      toast.error("Failed to getting State");
+    }
+  }, [error]);
 
-console.log("STATE",STATE)
+  console.log("STATE", STATE);
   return (
     <>
       <div className="NavContainer" ref={menuRef}>
@@ -118,7 +115,6 @@ console.log("STATE",STATE)
               </div>
             </div>
 
-
             <Navbar.Collapse id="navbarScroll">
               <Nav className="me-auto my-2 my-lg-0" navbarScroll>
                 <select
@@ -131,11 +127,12 @@ console.log("STATE",STATE)
                 >
                   <option value="" disabled selected hidden>
                     By State
-                   </option>
-                   
-                  {!loading &&  STATE?.map((STAT) => (
-                    <option value={STAT?.stateId}>{STAT?.stateName}</option>
-                  ))}
+                  </option>
+
+                  {!loading &&
+                    STATE?.map((STAT) => (
+                      <option value={STAT?.stateId}>{STAT?.stateName}</option>
+                    ))}
                 </select>
               </Nav>
 
@@ -143,32 +140,71 @@ console.log("STATE",STATE)
                 <option value="">English</option>
                 <option value="hindi">Hindi</option>
               </select>
-
-
             </Navbar.Collapse>
 
-              <Button
+            <Button
               className="OptionBtn mx-1"
-                variant="primary text-white"
-                onClick={() => handleShowOptions()}
+              variant="primary text-white"
+              onClick={() => handleShowOptions()}
+            >
+              <Grip />
+            </Button>
+            <div
+              className={`GridCards position-absolute top-100 end-0 p-2 user-select-none border border-black border-1 rounded-3 bg-white ${
+                showOption ? "" : "d-none"
+              }`}
+            >
+              <li
+                onClick={() => navigate("/profile")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer icon-link-hover"
               >
-                <Grip />
-              </Button>
-            <div className={`GridCards position-absolute top-100 end-0 p-2 user-select-none border border-black border-1 rounded-3 bg-white ${showOption?"":"d-none"}`}>
-                <li onClick={()=>navigate("/profile")} className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer icon-link-hover">
-                  Profile
-                </li>
-                <li onClick={()=>navigate("/add-person")} className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer icon-link-hover">
-                  Add Missing Person
-                </li>
-                <li onClick={()=>{navigate('/report-found-person')}} className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer">
-                  Report Found Person
-                </li>
-                <li onClick={()=>navigate('/report-dead-bodies')} className="list list-unstyled px-4 py-1 cursor-pointer">
-                  Report Found DeadBody
-                </li>
-              </div>
-          
+                Profile
+              </li>
+              <li
+                onClick={() => navigate("/add-person")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer icon-link-hover"
+              >
+                Add Missing Person
+              </li>
+              <li
+                onClick={() => {
+                  navigate("/report-found-person");
+                }}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer"
+              >
+                Report Found Person
+              </li>
+              <li
+                onClick={() => navigate("/report-dead-bodies")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer icon-link-hover"
+              >
+                Report Found DeadBody
+              </li>
+              <li
+                onClick={() => navigate("/disclaimer")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer"
+              >
+                Legal Disclaimer
+              </li>
+              <li
+                onClick={() => navigate("/data-usage-policy")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer"
+              >
+                Data Usage Policy
+              </li>
+              <li
+                onClick={() => navigate("/terms-and-conditions")}
+                className="border-bottom border-1 list list-unstyled px-4 py-1 cursor-pointer"
+              >
+                Terms & Conditions
+              </li>
+              <li
+                onClick={() => navigate("/user-content-policy")}
+                className="list list-unstyled px-4 py-1 cursor-pointer"
+              >
+                User Content Policy
+              </li>
+            </div>
           </Container>
         </Navbar>
         <div className="HomeNav">
@@ -228,7 +264,7 @@ console.log("STATE",STATE)
           <Offcanvas.Body></Offcanvas.Body>
         </Offcanvas>
       </>
-{/* {
+      {/* {
   showLogin && <Login setShowLogin={setShowLogin}/>
 } */}
     </>

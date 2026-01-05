@@ -42,7 +42,7 @@ const DateValidate=()=>{
       <div className="card-image-container">
         
         <img src={`https://zipnet.delhipolice.gov.in${person?.images[0]?.imageUrl}`
-} onError={(e) => (e.target.src = "not-available.webp")} className="card-image" />
+} onError={(e) => (e.target.src = "not-available.webp")} className="card-image" style={{filter:personType==="deadBodies"?"blur(7px)":"blur(0px)"}} />
         <button className="heart-button">
           <FaLocationDot className='FaLocationPin'/>
         </button>

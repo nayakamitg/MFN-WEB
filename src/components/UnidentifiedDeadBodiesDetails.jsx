@@ -65,10 +65,10 @@ if(loading){
       <div className="mainDetailContainer">
     <div className="detailsContainer">
     <div className="imageContainer">
-        <img className='bigImage' src={currimage} alt="" />
+        <img className='bigImage' src={currimage} style={{filter:"blur(5px)"}} alt="" />
         <div className="images">
             {
-                person?.images.map((image,index)=><div key={index} className='smallImage' ><img onClick={(e)=>{handleImageShow(e)}} src={`https://zipnet.delhipolice.gov.in${image?.imageUrl}`} alt="" /></div>)
+                person?.images.map((image,index)=><div key={index} className='smallImage' ><img onClick={(e)=>{handleImageShow(e)}} src={`https://zipnet.delhipolice.gov.in${image?.imageUrl}`} alt="" onError={(e) => (e.target.src = "not-available.webp")} style={{filter:"blur(3px)"}} /></div>)
             }
 
         </div>
