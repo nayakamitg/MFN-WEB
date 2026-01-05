@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./ui/Loader";
 import "../assets/missingPerson.css";
-import Card from "./ui/card";
+import Card from "./ui/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { getFoundPersons, setDataZero } from "@/services/Redux/missingSlice";
 import { setFilter, resetFilter } from "../services/Redux/filterSlice";

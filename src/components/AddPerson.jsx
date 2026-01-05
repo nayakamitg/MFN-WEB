@@ -46,10 +46,8 @@ const AddPerson = () => {
     upperDressColor: "",
     lowerDress: "",
     lowerDressColor: "",
-    face: "",
-    mustaches: "",
-        createdOn:"",
-        reportingDate:"",
+    createdOn:"",
+    reportingDate:"",
     photo: null,
     imageUrls: []
   });
@@ -255,8 +253,6 @@ const handleSubmit = async (e) => {
         upperDressColor: "",
         lowerDress: "",
         lowerDressColor: "",
-        face: "",
-        mustaches: "",
         createdOn:"",
         reportingDate:"",
         photo: null,
@@ -847,10 +843,8 @@ const handleSubmit = async (e) => {
     upperDressColor: "",
     lowerDress: "",
     lowerDressColor: "",
-        createdOn:"",
-        reportingDate:"",
-    face: "",
-    mustaches: "",
+    createdOn:"",
+    reportingDate:"",
     photo: null,
     imageUrls: []
                 });

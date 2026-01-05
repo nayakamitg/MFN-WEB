@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Loader from "./ui/Loader";
 import "../assets/missingPerson.css";
-import Card from "./ui/card";
+import Card from "./ui/Card";
 import { useDispatch, useSelector } from "react-redux";
 import { getMissingPersons, setDataZero } from "@/services/Redux/missingSlice";
 import toast from "react-hot-toast";
