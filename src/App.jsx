@@ -115,7 +115,7 @@ function App() {
 
     {
       path: "/*",
-      element: <Loader />,
+      element: <h1>Not Found</h1>,
     },
   ]);
 
