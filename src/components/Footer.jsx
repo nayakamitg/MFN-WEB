@@ -73,6 +73,16 @@ const Footer = () => {
             </p>
           )}
         </NavLink>
+        <NavLink
+          className="text-white text-decoration-none"
+          to="/data-deletion"
+        >
+          {({ isActive }) => (
+            <p style={{ fontWeight: isActive ? "bold" : "normal" }}>
+              Data Deletion
+            </p>
+          )}
+        </NavLink>
 
         <NavLink
           className="text-white text-decoration-none"
