@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import NavbarComp from "./Navbar";
 import Footer from "./Footer";
 import { Button } from "react-bootstrap";
-import toast from "react-hot-toast";
-import axios from "axios";
 
 const DataDeletion = () => {
   const [formData, setFormData] = useState({
