@@ -23,6 +23,7 @@ import Disclaimer from "./components/Disclaimer";
 import DataUsagePolicy from "./components/DataUsagePolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
 import UserContentPolicy from "./components/UserContentPolicy";
+import DataDeletion from "./components/DataDeletion";
 
 function App() {
   const routes = createBrowserRouter([
@@ -106,6 +107,10 @@ function App() {
     {
       path: "/user-content-policy",
       element: <UserContentPolicy />,
+    },
+    {
+      path: "/data-deletion",
+      element: <DataDeletion />,
     },
 
     {
